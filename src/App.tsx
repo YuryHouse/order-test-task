@@ -18,7 +18,7 @@ function App() {
 
     const onSubmit = (data: IFormInput, e: any) => {
         e.preventDefault();
-        axios.post('https://gmail-nodejs-main.herokuapp.com/sendMessage', {data})
+        axios.post('https://order-task-backend.herokuapp.com/sendMessage', {data})
             .then((res) => {
                 alert('Thank you. Your message has been received. We will contact you shortly.');
             });
